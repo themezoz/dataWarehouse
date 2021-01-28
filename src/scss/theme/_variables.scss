@@ -44,9 +44,9 @@ $gray-200: #F8F8F8 !default;
 $gray-300: #bec3d0 !default;
 $gray-400: #94A2B3 !default;
 $gray-500: #6f7995 !default;
-$gray-600: #4d5469 !default;
-$gray-700: #94A2B3 !default;
-$gray-800: #4d5969 !default;
+$gray-600:  #94A2B3 !default;
+$gray-700:  #4d5469 !default;
+$gray-800: #4B5D68 !default;
 $gray-900: #4F5665 !default;
 $gray-1000: #272D4E !default;
 $gray-1100: #0b1727 !default;
@@ -210,7 +210,7 @@ $spacers: map-merge(
 //|   Body
 //-----------------------------------------------*/
 $body-bg: $white !default;
-$body-color: $gray-700 !default;
+$body-color: $gray-800 !default;
 
 //*-----------------------------------------------
 //|   Link
@@ -222,17 +222,18 @@ $link-hover-decoration: underline !default;
 //|   Components
 //-----------------------------------------------*/
 $border-radius: 0.25rem !default;
-$border-radius-lg: 0.625rem !default;
+$border-radius-sm: 0.625rem !default;
+$border-radius-lg: 3.125rem !default;
 
 //*-----------------------------------------------
 //|   Fonts Families
 //-----------------------------------------------*/
-$font-family-sans-serif: 'Circular Std', 'Poppins', -apple-system, BlinkMacSystemFont,
+$font-family-sans-serif: 'Lato', 'Poppins', -apple-system, BlinkMacSystemFont,
   'Segoe UI', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
   'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 $font-family-monospace: 'SFMono-Regular', Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace !default;
-$font-family-base: 'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+$font-family-base: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI',
    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
   'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 
@@ -414,7 +415,7 @@ $hr-opacity: 1 !default;
 //|   card
 //-----------------------------------------------*/
 $card-border-width:                 2px !default;
-$card-border-radius:                3.125rem !default;
+$card-border-radius:                0.625rem !default;
 
 
 //*-----------------------------------------------
@@ -422,10 +423,12 @@ $card-border-radius:                3.125rem !default;
 //-----------------------------------------------*/
 $carousel-control-opacity: 0.9 !default;
 $carousel-control-hover-opacity: 0.9 !default;
-$carousel-control-color:             $gray-400 !default;
-$carousel-control-icon-width:        2rem !default;
-$carousel-control-width:             15% !default;
-$carousel-control-transition:        opacity .15s ease !default;
+$carousel-control-color:             $white !default;
+
+$carousel-indicator-active-bg:       $white !default;
+$carousel-indicator-width:           5px !default;
+$carousel-indicator-height:          5px !default;
+$carousel-indicator-hit-area-height : 0 !default;
 
 
 $carousel-control-prev-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/%3E%3C/svg%3E") !default;

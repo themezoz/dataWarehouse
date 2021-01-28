@@ -36,18 +36,25 @@
   background-image: if($enable-gradients, linear-gradient(270deg, rgba($black, .25), rgba($black, .001)), null);
 }
 
+.carousel-indicators {
+  position: static;
+  justify-content: start;
+  margin:  0;
+
+ li{
+  border-radius: 50%;
+ }
+
+  .active {
+    opacity: $carousel-indicator-active-opacity;
+    background-color: $danger;
+    width: 7px;
+    height:7px;
+  }
+}
 
 .carousel-control-prev {
   left: auto;
   right: 45px;
 }
-
-
-// custom css for testimonial
-.testimonial-card-shadow{ 
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
 
