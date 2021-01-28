@@ -1,11 +1,11 @@
 mixin FeatureList(config)
   .card.px-5.px-md-3.py-lg-5
-    .row.flex-center.z-index-2
+    .row.flex-center
       +Background({ image: `${CWD}assets/img/illustrations/${config.bgimage}`, attrs: { style: { 'background-position': 'center', 'background-size': 'contain',} }, className: 'z-index-1 d-none d-lg-block' })
       +Background({ image: `${CWD}assets/img/illustrations/${config.bgimage}`, attrs: { style: { 'background-position': 'center', 'background-size': 'cover',} }, className: 'z-index-1 d-block d-lg-none' })
       .col-md-4.pe-0.pe-md-0.text-center
         img.img-fluid(src=`${CWD}assets/img/illustrations/${config.image}`  alt='')  
-      .col-md-8.ps-md-3.pe-md-2.text-center.text-md-start
+      .col-md-8.ps-md-3.pe-md-2.text-center.text-md-start.z-index-2
         .card-body.px-0
           h4.card-title.pt-md-5=config.title
           p.mb-0!=config.text
