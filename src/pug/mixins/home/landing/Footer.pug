@@ -5,11 +5,11 @@ mixin FooterList(...items)
         =item
 
 mixin PreFooter
-  +Section.py-2
+  +Section.py-6
     .row.flex-center.px-3         
       .col-12.col-md-6.px-md-0.order-1.order-md-0
         .fs--1.text-center.text-md-start
-          p.mb-0 This template is made with &nbsp;
+          p.mb-0 This template is made with&nbsp;
             svg.bi.bi-suit-heart-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#9C69E2' viewBox='0 0 16 16')
               path(d='M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z')
 
@@ -22,9 +22,9 @@ mixin PreFooter
           img.img-fluid(src=`${CWD}assets/img/icons/pre-footer.png` height="14" alt=''  )
 
 mixin Footer
-  +Section.py-5.pb-0
+  +Section.py-6.pb-0
     hr.text-info.opacity-25
-    .row.py-6.justify-content-sm-between.text-center.text-md-start
+    .row.py-7.justify-content-sm-between.text-center.text-md-start
       .col-md-6
         h1.fw-bold Try for free!
         p Get limited 1 week free try our features!
@@ -36,7 +36,7 @@ mixin Footer
             path(fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z')
          
     .row.justify-content-lg-around
-      .col-6.col-sm-12.col-lg-3.mb-3.order-0.order-sm-0
+      .col-12.col-sm-12.col-lg-3.mb-4.order-0.order-sm-0
         a(href='#').text-decoration-none
           img.img-fluid.me-3(src=`${CWD}assets/img/icons/logo.png` alt='' )
           span.fw-bold.fs-1.text-1000 DataWarehouse
@@ -45,22 +45,22 @@ mixin Footer
           br
           |Bahagia Ave Street PRBW 29281
 
-        p.fw-light info@warehouse.project
+        p info@warehouse.project
           br
           |1-232-3434 (Main) 
 
       .col-6.col-sm-4.col-lg-3.mb-3.order-2.order-sm-1
-        h6.lh-lg.fw-bold About
+        h6.lh-lg.fw-bold.mb-4 About
         ul.list-unstyled.mb-md-4.mb-lg-0
           +FooterList('Profile','Features','Careers','DW News')
 
       .col-6.col-sm-4.col-lg-3.mb-3.order-3.order-sm-2
-        h6.lh-lg.fw-bold  Help 
+        h6.lh-lg.fw-bold.mb-4  Help 
         ul.list-unstyled.mb-md-4.mb-lg-0
           +FooterList('Support','Sign Up ','Guide','Reports','Q&A')
           
-      .col-6.col-sm-4.col-lg-3.mb-3.order-1.order-sm-3
-        h6.lh-lg.fw-bold Social Media 
+      .col-12.col-sm-4.col-lg-3.mb-3.order-1.order-sm-3
+        h6.lh-lg.fw-bold.mb-4 Social Media 
         ul.list-unstyled.mb-md-4.mb-lg-0
           li.list-inline-item
             a.text-dark.fs--1.text-decoration-none(href='#!')
